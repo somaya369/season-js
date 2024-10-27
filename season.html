@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONTH</title>
+</head>
+<body>
+    <!-- HTML CODES -->
+    <input type="text" id="input1">
+    <button onclick="showSeson()">Click</button>
+    <h2 id="items"></h2>
+
+
+    <!-- SCRIPT CODES -->
+
+    <script>
+        function showSeson(){
+            let input1 =document.getElementById('input1').value
+            switch(input1){
+                case "Winter":
+                    document.getElementById('items').innerHTML = 'December, January, February' 
+                    break;
+                    case "Summer":
+                    document.getElementById('items').innerHTML = 'June, July, August'
+                    break;
+                    case "Autumn":
+                    document.getElementById('items').innerHTML = 'November, October, September'
+                    break;
+                    case "Spring":
+                    document.getElementById('items').innerHTML = 'March, April, May'
+                    break;
+                    default:
+                    document.getElementById('items').innerHTML = 'No one execute.'
+            }
+        }
+    </script>
+</body>
+</html>
